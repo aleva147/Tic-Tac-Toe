@@ -10,7 +10,7 @@ This game was developed in Unity Game Engine, with SOLID principles in mind and 
 
 All implemented Tic-Tac-Toe logic works for any NxN grid, not just a 3x3 board. The game over detection algorithm interestingly runs in constant time, unlike the usual linear time implementation. Object pooling was used for VFXs to avoid unnecessary instantiation and destruction of game objects each time a visual effect is used. Adding more themes or removing existing themes can be done entirely in the editor, without the need to change any code. The game also offers data persistence across different sessions, by keeping track of player statistics using PlayerPrefs. 
 
-NOTE: Currently, the UI repositioning is a bit wonky if the screen orientation changes after starting a new round (as can be seen on the video demonstration). Apart from this bug, the game works as expected, and no other issues have been found.
+NOTE: Currently, the UI repositioning is a bit wonky if the screen orientation changes after starting a new round (as can be seen in the video demonstration). Also, if the X-O marks are placed too quickly one after another, the VFX animation acts weird — but this can be simply fixed by killing the existing DOTween before starting a new animation. Apart from these two bugs, the game works as expected, and no other issues have been found.
 
 Unity version used: 6000.0.62f1
 
